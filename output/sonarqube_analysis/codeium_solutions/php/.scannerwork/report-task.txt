@@ -1,0 +1,6 @@
+projectKey=codeium_php_analysis
+serverUrl=http://localhost:9000
+serverVersion=25.10.0.114319
+dashboardUrl=http://localhost:9000/dashboard?id=codeium_php_analysis
+ceTaskId=5b5a85e6-af4b-4c4c-93e0-843bba6c55d5
+ceTaskUrl=http://localhost:9000/api/ce/task?id=5b5a85e6-af4b-4c4c-93e0-843bba6c55d5

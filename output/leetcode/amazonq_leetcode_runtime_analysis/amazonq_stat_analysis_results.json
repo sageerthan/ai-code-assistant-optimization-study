@@ -1,0 +1,269 @@
+{
+    "Python": {
+        "Accepted": {
+            "count": 46,
+            "slugs": [
+                "best-time-to-buy-and-sell-stock",
+                "merge-two-sorted-lists",
+                "valid-parentheses",
+                "palindrome-number",
+                "two-sum",
+                "lfu-cache",
+                "burst-balloons",
+                "binary-tree-maximum-path-sum",
+                "shortest-path-in-a-grid-with-obstacles-elimination",
+                "serialize-and-deserialize-binary-tree",
+                "invert-binary-tree",
+                "majority-element",
+                "maximum-subarray",
+                "contains-duplicate",
+                "valid-anagram",
+                "missing-number",
+                "intersection-of-two-arrays",
+                "binary-search",
+                "symmetric-tree",
+                "climbing-stairs",
+                "product-of-array-except-self",
+                "top-k-frequent-elements",
+                "group-anagrams",
+                "longest-substring-without-repeating-characters",
+                "add-two-numbers",
+                "search-in-rotated-sorted-array",
+                "set-matrix-zeroes",
+                "find-the-duplicate-number",
+                "kth-largest-element-in-an-array",
+                "sort-colors",
+                "lru-cache",
+                "clone-graph",
+                "number-of-islands",
+                "minimum-path-sum",
+                "word-break",
+                "find-all-anagrams-in-a-string",
+                "spiral-matrix",
+                "letter-combinations-of-a-phone-number",
+                "binary-tree-level-order-traversal",
+                "median-of-two-sorted-arrays",
+                "word-ladder",
+                "trapping-rain-water",
+                "longest-valid-parentheses",
+                "minimum-window-substring",
+                "n-queens",
+                "regular-expression-matching"
+            ]
+        },
+        "Runtime Error": {
+            "count": 2,
+            "slugs": [
+                "subsets",
+                "merge-k-sorted-lists"
+            ]
+        },
+        "Wrong Answer": {
+            "count": 2,
+            "slugs": [
+                "dice-roll-simulation",
+                "count-subtrees-with-max-distance-between-cities"
+            ]
+        }
+    },
+    "Java": {
+        "Accepted": {
+            "count": 47,
+            "slugs": [
+                "best-time-to-buy-and-sell-stock",
+                "merge-two-sorted-lists",
+                "valid-parentheses",
+                "palindrome-number",
+                "two-sum",
+                "lfu-cache",
+                "burst-balloons",
+                "binary-tree-maximum-path-sum",
+                "serialize-and-deserialize-binary-tree",
+                "invert-binary-tree",
+                "majority-element",
+                "maximum-subarray",
+                "contains-duplicate",
+                "valid-anagram",
+                "missing-number",
+                "intersection-of-two-arrays",
+                "binary-search",
+                "symmetric-tree",
+                "product-of-array-except-self",
+                "top-k-frequent-elements",
+                "group-anagrams",
+                "longest-substring-without-repeating-characters",
+                "add-two-numbers",
+                "search-in-rotated-sorted-array",
+                "set-matrix-zeroes",
+                "find-the-duplicate-number",
+                "kth-largest-element-in-an-array",
+                "sort-colors",
+                "lru-cache",
+                "clone-graph",
+                "number-of-islands",
+                "minimum-path-sum",
+                "word-break",
+                "find-all-anagrams-in-a-string",
+                "spiral-matrix",
+                "subsets",
+                "letter-combinations-of-a-phone-number",
+                "binary-tree-level-order-traversal",
+                "median-of-two-sorted-arrays",
+                "word-ladder",
+                "trapping-rain-water",
+                "longest-valid-parentheses",
+                "merge-k-sorted-lists",
+                "dice-roll-simulation",
+                "minimum-window-substring",
+                "n-queens",
+                "regular-expression-matching"
+            ]
+        },
+        "Wrong Answer": {
+            "count": 1,
+            "slugs": [
+                "shortest-path-in-a-grid-with-obstacles-elimination"
+            ]
+        },
+        "Compile Error": {
+            "count": 1,
+            "slugs": [
+                "count-subtrees-with-max-distance-between-cities"
+            ]
+        }
+    },
+    "Javascript": {
+        "Accepted": {
+            "count": 46,
+            "slugs": [
+                "best-time-to-buy-and-sell-stock",
+                "merge-two-sorted-lists",
+                "valid-parentheses",
+                "palindrome-number",
+                "two-sum",
+                "lfu-cache",
+                "burst-balloons",
+                "binary-tree-maximum-path-sum",
+                "shortest-path-in-a-grid-with-obstacles-elimination",
+                "serialize-and-deserialize-binary-tree",
+                "invert-binary-tree",
+                "majority-element",
+                "maximum-subarray",
+                "contains-duplicate",
+                "valid-anagram",
+                "missing-number",
+                "intersection-of-two-arrays",
+                "binary-search",
+                "symmetric-tree",
+                "climbing-stairs",
+                "product-of-array-except-self",
+                "top-k-frequent-elements",
+                "group-anagrams",
+                "longest-substring-without-repeating-characters",
+                "add-two-numbers",
+                "search-in-rotated-sorted-array",
+                "set-matrix-zeroes",
+                "find-the-duplicate-number",
+                "kth-largest-element-in-an-array",
+                "sort-colors",
+                "lru-cache",
+                "clone-graph",
+                "minimum-path-sum",
+                "word-break",
+                "spiral-matrix",
+                "subsets",
+                "letter-combinations-of-a-phone-number",
+                "binary-tree-level-order-traversal",
+                "median-of-two-sorted-arrays",
+                "word-ladder",
+                "trapping-rain-water",
+                "longest-valid-parentheses",
+                "merge-k-sorted-lists",
+                "minimum-window-substring",
+                "n-queens",
+                "regular-expression-matching"
+            ]
+        },
+        "Runtime Error": {
+            "count": 2,
+            "slugs": [
+                "number-of-islands",
+                "find-all-anagrams-in-a-string"
+            ]
+        },
+        "Wrong Answer": {
+            "count": 2,
+            "slugs": [
+                "dice-roll-simulation",
+                "count-subtrees-with-max-distance-between-cities"
+            ]
+        }
+    },
+    "Php": {
+        "Accepted": {
+            "count": 46,
+            "slugs": [
+                "best-time-to-buy-and-sell-stock",
+                "merge-two-sorted-lists",
+                "valid-parentheses",
+                "palindrome-number",
+                "two-sum",
+                "lfu-cache",
+                "burst-balloons",
+                "binary-tree-maximum-path-sum",
+                "serialize-and-deserialize-binary-tree",
+                "invert-binary-tree",
+                "majority-element",
+                "contains-duplicate",
+                "valid-anagram",
+                "missing-number",
+                "intersection-of-two-arrays",
+                "binary-search",
+                "symmetric-tree",
+                "climbing-stairs",
+                "product-of-array-except-self",
+                "top-k-frequent-elements",
+                "group-anagrams",
+                "longest-substring-without-repeating-characters",
+                "add-two-numbers",
+                "search-in-rotated-sorted-array",
+                "set-matrix-zeroes",
+                "find-the-duplicate-number",
+                "kth-largest-element-in-an-array",
+                "lru-cache",
+                "clone-graph",
+                "number-of-islands",
+                "minimum-path-sum",
+                "word-break",
+                "find-all-anagrams-in-a-string",
+                "spiral-matrix",
+                "subsets",
+                "letter-combinations-of-a-phone-number",
+                "binary-tree-level-order-traversal",
+                "median-of-two-sorted-arrays",
+                "word-ladder",
+                "trapping-rain-water",
+                "longest-valid-parentheses",
+                "merge-k-sorted-lists",
+                "count-subtrees-with-max-distance-between-cities",
+                "minimum-window-substring",
+                "n-queens",
+                "regular-expression-matching"
+            ]
+        },
+        "Wrong Answer": {
+            "count": 3,
+            "slugs": [
+                "shortest-path-in-a-grid-with-obstacles-elimination",
+                "sort-colors",
+                "dice-roll-simulation"
+            ]
+        },
+        "Runtime Error": {
+            "count": 1,
+            "slugs": [
+                "maximum-subarray"
+            ]
+        }
+    }
+}

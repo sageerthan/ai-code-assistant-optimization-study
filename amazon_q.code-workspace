@@ -1,0 +1,12 @@
+{
+  "folders": [
+    {
+      "path": "output/amazon_q"
+    }
+  ],
+  "settings": {
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.inlineSuggest.enabled": true,
+    "editor.suggest.showWords": true
+  }
+}

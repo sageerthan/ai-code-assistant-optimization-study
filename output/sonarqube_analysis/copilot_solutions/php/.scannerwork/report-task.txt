@@ -1,0 +1,6 @@
+projectKey=copilot_php_analysis
+serverUrl=http://localhost:9000
+serverVersion=25.10.0.114319
+dashboardUrl=http://localhost:9000/dashboard?id=copilot_php_analysis
+ceTaskId=3035b622-e4f0-49e1-8206-ec1ce4c84901
+ceTaskUrl=http://localhost:9000/api/ce/task?id=3035b622-e4f0-49e1-8206-ec1ce4c84901

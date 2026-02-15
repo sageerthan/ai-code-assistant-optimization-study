@@ -1,0 +1,6 @@
+projectKey=copilot_javascript_analysis
+serverUrl=http://localhost:9000
+serverVersion=25.10.0.114319
+dashboardUrl=http://localhost:9000/dashboard?id=copilot_javascript_analysis
+ceTaskId=930876ce-6d57-4076-a8b1-5dbca9684d30
+ceTaskUrl=http://localhost:9000/api/ce/task?id=930876ce-6d57-4076-a8b1-5dbca9684d30

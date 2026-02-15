@@ -1,0 +1,6 @@
+projectKey=cursor_java_analysis
+serverUrl=http://localhost:9000
+serverVersion=25.10.0.114319
+dashboardUrl=http://localhost:9000/dashboard?id=cursor_java_analysis
+ceTaskId=be0914b0-bfaa-440e-b635-0f739935c62f
+ceTaskUrl=http://localhost:9000/api/ce/task?id=be0914b0-bfaa-440e-b635-0f739935c62f

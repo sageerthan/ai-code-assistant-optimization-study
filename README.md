@@ -1,0 +1,2 @@
+# ai-code-assistant-optimization-study
+This repository contains datasets, experimental code, evaluation metrics, and analysis for a comparative study on how AI code assistants (Cursor, GitHub Copilot, Codeium &amp; Amazon Q) optimize code across multiple programming languages (Java, JavaScript, Python &amp; PHP).The study examines optimization quality &amp; assistant-specific performance patterns.

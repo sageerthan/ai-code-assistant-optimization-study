@@ -1,0 +1,66 @@
+{
+  "submissions_dump": [
+    {
+      "id": 1850390530,
+      "question_id": 1414,
+      "lang": "java",
+      "lang_name": "Java",
+      "time": "0minutes",
+      "timestamp": 1765215481,
+      "status": 10,
+      "status_display": "Accepted",
+      "runtime": "7 ms",
+      "url": "/submissions/detail/1850390530/",
+      "is_pending": "Not Pending",
+      "title": "Shortest Path in a Grid with Obstacles Elimination",
+      "memory": "45.1 MB",
+      "code": "import java.util.Queue;\nimport java.util.LinkedList;\nimport java.util.Arrays;\nclass Solution {\n    public int shortestPath(int[][] grid, int k) {\n        int m = grid.length, n = grid[0].length;\n        if (k >= m + n - 2) return m + n - 2;\n        \n        int[][] dirs = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};\n        boolean[][][] visited = new boolean[m][n][k + 1];\n        Queue<int[]> q = new LinkedList<>();\n        q.offer(new int[]{0, 0, 0, k});\n        visited[0][0][k] = true;\n        \n        while (!q.isEmpty()) {\n            int[] cur = q.poll();\n            int x = cur[0], y = cur[1], steps = cur[2], obstacles = cur[3];\n            \n            if (x == m - 1 && y == n - 1) return steps;\n            \n            for (int[] dir : dirs) {\n                int nx = x + dir[0], ny = y + dir[1];\n                if (nx < 0 || nx >= m || ny < 0 || ny >= n) continue;\n                \n                int newObstacles = obstacles - grid[nx][ny];\n                if (newObstacles >= 0 && !visited[nx][ny][newObstacles]) {\n                    visited[nx][ny][newObstacles] = true;\n                    q.offer(new int[]{nx, ny, steps + 1, newObstacles});\n                }\n            }\n        }\n        return -1;\n    }\n}\n    ",
+      "compare_result": "1111111111111111111111111111111111111111111111111111111",
+      "title_slug": "shortest-path-in-a-grid-with-obstacles-elimination",
+      "has_notes": false,
+      "flag_type": 1,
+      "frontend_id": 846,
+      "statusCode": 10,
+      "totalTestcases": 55,
+      "question": {
+        "title": "Shortest Path in a Grid with Obstacles Elimination",
+        "titleSlug": "shortest-path-in-a-grid-with-obstacles-elimination",
+        "questionId": "1414"
+      },
+      "status_code": 10,
+      "passedTestCaseCnt": 55,
+      "totalTestCaseCnt": 55
+    },
+    {
+      "id": 1850385038,
+      "question_id": 1740,
+      "lang": "java",
+      "lang_name": "Java",
+      "time": "6minutes",
+      "timestamp": 1765215136,
+      "status": 10,
+      "status_display": "Accepted",
+      "runtime": "100 ms",
+      "url": "/submissions/detail/1850385038/",
+      "is_pending": "Not Pending",
+      "title": "Count Subtrees With Max Distance Between Cities",
+      "memory": "46.7 MB",
+      "code": "class Solution {\n    public int[] countSubgraphsForEachDiameter(int n, int[][] edges) {\n        int[] res = new int[n - 1];\n        int[][] graph = new int[n][n];\n        for (int[] edge : edges) {\n            graph[edge[0] - 1][edge[1] - 1] = 1;\n            graph[edge[1] - 1][edge[0] - 1] = 1;\n        }\n        \n        for (int mask = 1; mask < (1 << n); mask++) {\n            if (Integer.bitCount(mask) < 2) continue;\n            int maxDist = getMaxDistance(graph, mask, n);\n            if (maxDist > 0) res[maxDist - 1]++;\n        }\n        return res;\n    }\n    \n    private int getMaxDistance(int[][] graph, int mask, int n) {\n        int[] cities = new int[Integer.bitCount(mask)];\n        int idx = 0;\n        for (int i = 0; i < n; i++) {\n            if ((mask & (1 << i)) != 0) cities[idx++] = i;\n        }\n        \n        if (!isConnected(graph, cities)) return -1;\n        \n        int maxDist = 0;\n        for (int i = 0; i < cities.length; i++) {\n            for (int j = i + 1; j < cities.length; j++) {\n                maxDist = Math.max(maxDist, bfs(graph, cities[i], cities[j], mask));\n            }\n        }\n        return maxDist;\n    }\n    \n    private boolean isConnected(int[][] graph, int[] cities) {\n        boolean[] visited = new boolean[cities.length];\n        dfs(graph, cities, visited, 0);\n        for (boolean v : visited) {\n            if (!v) return false;\n        }\n        return true;\n    }\n    \n    private void dfs(int[][] graph, int[] cities, boolean[] visited, int idx) {\n        visited[idx] = true;\n        for (int i = 0; i < cities.length; i++) {\n            if (!visited[i] && graph[cities[idx]][cities[i]] == 1) {\n                dfs(graph, cities, visited, i);\n            }\n        }\n    }\n    \n    private int bfs(int[][] graph, int start, int end, int mask) {\n        if (start == end) return 0;\n        boolean[] visited = new boolean[graph.length];\n        int[] queue = new int[graph.length];\n        int front = 0, rear = 0;\n        queue[rear++] = start;\n        visited[start] = true;\n        int dist = 0;\n        \n        while (front < rear) {\n            int size = rear - front;\n            dist++;\n            for (int i = 0; i < size; i++) {\n                int curr = queue[front++];\n                for (int next = 0; next < graph.length; next++) {\n                    if (graph[curr][next] == 1 && !visited[next] && (mask & (1 << next)) != 0) {\n                        if (next == end) return dist;\n                        visited[next] = true;\n                        queue[rear++] = next;\n                    }\n                }\n            }\n        }\n        return -1;\n    }\n}\n    ",
+      "compare_result": "1111111111111111111111111111111",
+      "title_slug": "count-subtrees-with-max-distance-between-cities",
+      "has_notes": false,
+      "flag_type": 1,
+      "frontend_id": 845,
+      "statusCode": 10,
+      "totalTestcases": 31,
+      "question": {
+        "title": "Count Subtrees With Max Distance Between Cities",
+        "titleSlug": "count-subtrees-with-max-distance-between-cities",
+        "questionId": "1740"
+      },
+      "status_code": 10,
+      "passedTestCaseCnt": 31,
+      "totalTestCaseCnt": 31
+    }
+  ]
+}

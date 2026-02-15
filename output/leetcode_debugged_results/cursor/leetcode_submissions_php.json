@@ -1,0 +1,35 @@
+{
+  "submissions_dump": [
+    {
+      "id": 1851914094,
+      "question_id": 1343,
+      "lang": "php",
+      "lang_name": "PHP",
+      "time": "0minutes",
+      "timestamp": 1765362093,
+      "status": 10,
+      "status_display": "Accepted",
+      "runtime": "278 ms",
+      "url": "/submissions/detail/1851914094/",
+      "is_pending": "Not Pending",
+      "title": "Dice Roll Simulation",
+      "memory": "32.4 MB",
+      "code": "class Solution {\n\n    /**\n     * DP over (length, face, runLength).\n     * dp[$len][$face][$run] = ways to end with $face repeated $run times.\n     * @param int $n\n     * @param int[] $rollMax\n     * @return int\n     */\n    function dieSimulator($n, $rollMax) {\n        $MOD = 1000000007;\n        $maxRun = max($rollMax); // up to 15\n\n        // dp[len][face][run], face: 0..5, run: 1..maxRun\n        $dp = array_fill(0, $n + 1, array_fill(0, 6, array_fill(0, $maxRun + 1, 0)));\n\n        // base: sequences of length 1\n        for ($f = 0; $f < 6; $f++) {\n            $dp[1][$f][1] = 1;\n        }\n\n        for ($len = 2; $len <= $n; $len++) {\n            for ($f = 0; $f < 6; $f++) {\n                $limit = $rollMax[$f];\n\n                // continue same face if not exceeding limit\n                for ($run = 2; $run <= $limit; $run++) {\n                    $dp[$len][$f][$run] = ($dp[$len][$f][$run] + $dp[$len - 1][$f][$run - 1]) % $MOD;\n                }\n\n                // switch from any other face -> run length 1\n                $fromOthers = 0;\n                for ($pf = 0; $pf < 6; $pf++) {\n                    if ($pf === $f) continue;\n                    $prevLimit = $rollMax[$pf];\n                    for ($run = 1; $run <= $prevLimit; $run++) {\n                        $fromOthers += $dp[$len - 1][$pf][$run];\n                        if ($fromOthers >= $MOD) $fromOthers -= $MOD;\n                    }\n                }\n                $dp[$len][$f][1] = ($dp[$len][$f][1] + $fromOthers) % $MOD;\n            }\n        }\n\n        // total ways of length n\n        $ans = 0;\n        for ($f = 0; $f < 6; $f++) {\n            $limit = $rollMax[$f];\n            for ($run = 1; $run <= $limit; $run++) {\n                $ans += $dp[$n][$f][$run];\n                if ($ans >= $MOD) $ans -= $MOD;\n            }\n        }\n        return $ans;\n    }\n}",
+      "compare_result": "11111111111111111111111111111111",
+      "title_slug": "dice-roll-simulation",
+      "has_notes": false,
+      "flag_type": 1,
+      "frontend_id": 915,
+      "statusCode": 10,
+      "totalTestcases": 32,
+      "question": {
+        "title": "Dice Roll Simulation",
+        "titleSlug": "dice-roll-simulation",
+        "questionId": "1343"
+      },
+      "status_code": 10,
+      "passedTestCaseCnt": 32,
+      "totalTestCaseCnt": 32
+    }
+  ]
+}

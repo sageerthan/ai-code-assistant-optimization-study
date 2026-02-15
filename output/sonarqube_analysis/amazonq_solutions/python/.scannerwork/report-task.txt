@@ -1,0 +1,6 @@
+projectKey=amazonq_python_analysis
+serverUrl=http://localhost:9000
+serverVersion=25.10.0.114319
+dashboardUrl=http://localhost:9000/dashboard?id=amazonq_python_analysis
+ceTaskId=6b32aa7f-0a35-47c0-8616-299df59ad036
+ceTaskUrl=http://localhost:9000/api/ce/task?id=6b32aa7f-0a35-47c0-8616-299df59ad036

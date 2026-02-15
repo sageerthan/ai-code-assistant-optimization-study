@@ -1,0 +1,6 @@
+projectKey=amazonq_java_analysis
+serverUrl=http://localhost:9000
+serverVersion=25.10.0.114319
+dashboardUrl=http://localhost:9000/dashboard?id=amazonq_java_analysis
+ceTaskId=cd47c963-40c7-4181-b256-cdaf690ac2d5
+ceTaskUrl=http://localhost:9000/api/ce/task?id=cd47c963-40c7-4181-b256-cdaf690ac2d5

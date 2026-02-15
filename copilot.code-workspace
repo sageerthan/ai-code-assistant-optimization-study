@@ -1,0 +1,18 @@
+{
+  "folders": [
+    {
+      "path": "./output/copilot"
+    }
+  ],
+  "settings": {
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.inlineSuggest.enabled": true,
+    "editor.suggest.showWords": true,
+    "github.copilot.enable": {
+      "*": true,
+      "plaintext": false,
+      "markdown": false,
+      "scminput": false
+    }
+  }
+}

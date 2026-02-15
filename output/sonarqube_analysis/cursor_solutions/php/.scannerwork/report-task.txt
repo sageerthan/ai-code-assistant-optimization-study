@@ -1,0 +1,6 @@
+projectKey=cursor_php_analysis
+serverUrl=http://localhost:9000
+serverVersion=25.10.0.114319
+dashboardUrl=http://localhost:9000/dashboard?id=cursor_php_analysis
+ceTaskId=0ab9b08c-4571-421d-8997-4c0bd2fb7261
+ceTaskUrl=http://localhost:9000/api/ce/task?id=0ab9b08c-4571-421d-8997-4c0bd2fb7261
